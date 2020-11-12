@@ -83,16 +83,16 @@ const ProductPage = ({ match, history }) => {
                 {loading ? <Loader /> : error ? <Message variant="danger">{error}</Message> :
                     <>
                         <Row>
-                            <Col xs={12} md={4} className="d-flex align-items-stretch">
+                            <Col xs={12} md={5} className="d-flex align-items-stretch">
                                 <Image src={product.image} fluid />
                             </Col>
-                            <Col xs={12} md={5}>
+                            <Col xs={12} md={4}>
                                 <ListGroup variant="flush">
                                     <ListGroup.Item>
                                         <h5>{product.name}</h5>
                                         <Rating value={product.rating} />
                                     </ListGroup.Item>
-                                    <ListGroup.Item>{product.description}</ListGroup.Item>
+                                    <ListGroup.Item style={{ fontSize: "0.9rem" }}>{product.description}</ListGroup.Item>
                                     <ListGroup.Item as="h5">Rs. {addDecimal(product.price)}/-</ListGroup.Item>
                                 </ListGroup>
                             </Col>

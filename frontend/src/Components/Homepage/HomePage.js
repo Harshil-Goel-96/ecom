@@ -43,7 +43,9 @@ const HomePage = ({ match }) => {
                                                 <Card.Img variant="top" src={product.image} alt={product.name} />
                                             </LinkContainer>
                                             <Card.Body>
-                                                <Card.Title as="h6">{product.name}</Card.Title>
+                                                <LinkContainer to={`/product/${product._id}`} style={{ cursor: "pointer" }}>
+                                                    <Card.Title as="h6">{product.name}</Card.Title>
+                                                </LinkContainer>
                                                 <Rating value={product.rating} />
                                                 <Card.Text as="h5">
                                                     Rs. {addDecimal(product.price)}
@@ -64,7 +66,7 @@ const HomePage = ({ match }) => {
                     </>
                     )}
             </Container>
-        </div>
+        </div >
     )
 }
 
