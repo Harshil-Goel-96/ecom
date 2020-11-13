@@ -1,1 +1,1 @@
-MERN E-commerce Application
+MERN E-commerce Application with CRUD
