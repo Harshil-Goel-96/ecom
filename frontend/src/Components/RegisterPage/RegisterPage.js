@@ -44,7 +44,7 @@ const RegisterPage = ({ location, history }) => {
             <Container>
                 <Row className="pt-3 justify-content-center">
                     <Col xs="auto" md="auto">
-                        <h1>Sign Up</h1>
+                        <h1 className="text-center">Sign Up</h1>
                         {loading ? <Loader /> : null}
                         {error ? <Message variant="danger">{error}</Message> : message ? <Message variant="danger">{message}</Message> : null}
                     </Col>

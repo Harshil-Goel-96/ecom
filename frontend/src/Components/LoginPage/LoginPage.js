@@ -36,7 +36,7 @@ const LoginPage = ({ location, history }) => {
             <Container>
                 <Row className="pt-3 justify-content-center">
                     <Col xs="auto" md="auto">
-                        <h1>Sign In</h1>
+                        <h1 className="text-center">Sign In</h1>
                         {loading ? <Loader /> : null}
                         {error ? <Message variant="danger">{error}</Message> : null}
                     </Col>
