@@ -14,6 +14,7 @@ const ProductEditScreen = ({ match, history }) => {
 
     const [name, setName] = useState("");
     const [price, setPrice] = useState(0);
+    console.log(typeof price + " " + price)
     const [category, setCategory] = useState("");
     const [brand, setBrand] = useState("");
     const [stock, setStock] = useState(0);
@@ -144,7 +145,7 @@ const ProductEditScreen = ({ match, history }) => {
                                         </Form.File>
                                         {uploading ? <Loader /> : null}
                                     </Form.Group>
-                                    <Button variant="primary" classname="btn-block" type="submit">Update</Button>
+                                    <Button variant="primary" type="submit">Update</Button>
                                 </Form.Row>
                             </Form>
                         </Col>

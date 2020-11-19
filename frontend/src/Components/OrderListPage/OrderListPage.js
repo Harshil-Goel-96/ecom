@@ -42,7 +42,7 @@ const OrderListPage = () => {
                             <tbody>
                                 {
                                     orders.map(order => (
-                                        <tr>
+                                        <tr key={order._id}>
                                             <td>{order._id}</td>
                                             <td>{order.user && order.user.name ? order.user.name : "Anonymous"}</td>
                                             <td>{order.user ? order.user._id : "Anonymous"}</td>

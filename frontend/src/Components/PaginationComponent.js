@@ -8,8 +8,8 @@ const PaginationComponent = ({ pageNumber, pages, keyword }) => {
             <Pagination className="mb-0">
                 {
                     [...Array(pages).keys()].map((x) => (
-                        <LinkContainer to={keyword ? `/search/${keyword}/page/${x + 1}` : `/page/${x + 1}`}>
-                            <Pagination.Item key={x + 1} active={pageNumber === (x + 1)} >
+                        <LinkContainer key={x + 1} to={keyword ? `/search/${keyword}/page/${x + 1}` : `/page/${x + 1}`}>
+                            <Pagination.Item active={pageNumber === (x + 1)} >
                                 {x + 1}
                             </Pagination.Item>
                         </LinkContainer>
